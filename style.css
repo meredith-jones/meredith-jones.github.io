@@ -1,25 +1,26 @@
 html {
   background-color: #70db8b;
-  font-family: Arial, sans-serif;
+  font-family: 'Shadows Into Light', cursive;
 }
 
-header{
+
+header {
   padding: 10px;
   background-color: #70a6db;
-  font-family: Arial, sans-serif;
-  font-size: large;
+  font-family: 'Amatica SC', cursive;
+  font-size: 2em;
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 15px;
   border: 2px solid black;
   }
 
-nav{
+nav {
   text-decoration: none;
   color: #000000;
   background-color: #70dbdb;
-  font-family: Arial, sans-serif;
-  font-size: medium;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: large;
   font-weight: bold;
   letter-spacing: 1px;
   height: 20px;
@@ -28,25 +29,90 @@ nav{
   border: 2px solid black;
   }
 
-table{
+table {
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: large;
 }
 
-.summarytable{
-  border: 2px solid black;
-  text-decoration: none;
-  background-image: url("images/iceheather.jpg");
-  background-size: cover;
-  background-color: #cccccc;
+#summary {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+}
+
+#summary img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -1;
+}
+
+#summarytable {
+  border: 10px solid black;
+  background-color: #70db8b;
+  border-radius: 15px;
   padding: 10px;
 }
 
-#research{
+#research {
   border: 2px solid black;
   padding: 10px;
   margin: 10px;
   border-radius: 15px;
   background-color: #70a6db;
-  font-style: italic;
 }
+
+.hikepic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid black;
+  margin-top: 20px;
+}
+
+#bio, .hikefeatures {
+  font-size: 1.25em;
+  border: 2px solid black;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: #70dbdb;
+  padding: 10px;
+  margin: 15px;
+  letter-spacing: .5px;
+}
+
+h2 {
+  font-family: 'Amatica SC', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+.regular {
+  font-family: Helvetica, sans-serif;
+}
+
+a:visited {
+    color: green;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: .5em;
+    }
+    img {
+      width: 55%;
+      min-width: 220px;
+    }
+}
+
